@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "rental-api",
+      "script": "./index.js",
+      "cwd": "./",
+      "exec_mode": "cluster",
+      "instances": "max",
+      "node_args": "--max_old_space_size=8192",
+      "watch": true,
+      "ignore_watch": ["node_modules", "log"]
+    }
+  ]
+}

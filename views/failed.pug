@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Paiement échoué
+    link(rel='stylesheet', href='/style.css')
+
+  body
+    div(class="full-block")
+        div(class="block-div")
+            h1 Paiement échoué
+            p Code transaction : #{transactionId}
+            p Montant: #{amount} FCFA
+            img(src="/img/close.png" alt="failed" class="img-success-failed")
+            a(class="btn-redirect" onclick='redirectFunction()' href="https://xearth.ci" style="background-color:red") Retourner dans l'application
